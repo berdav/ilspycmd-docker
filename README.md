@@ -9,9 +9,23 @@ to decompile them but it requires a specific version of .NET.
 With this Docker image you can easily run ilspycmd just installing it from Docker
 
 ## Usage
-<!--Pull the image from the docker hub (TODO)-->
+
+### Pull the image from the docker hub
+This image is pushed to the official docker hub.
+
+You can install it using
+```bash
+sudo docker pull berdav/ilspycmd
+```
+
+Or directly run it using
+```bash
+sudo docker run -v .:/docker --rm -ti berdav/ilspycmd
+```
 
 ### Build the image
+Alternatively you can build the image from this repository
+
 To build the image simply use the provided script:
 ```bash
 sudo ./setup.sh
